@@ -1,0 +1,11 @@
+.home_bg{
+    background-image: url("../img/home_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social_box{
+    width: 40px;
+    height: 40px;
+    background-color: F2F2F2;
+}

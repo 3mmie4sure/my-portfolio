@@ -1,7 +1,7 @@
 <svg width="1440" height="1175" viewBox="0 0 1440 1175" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_304_128)">
 <rect width="1440" height="1175" fill="white"/>
-<rect x="1034.1" y="-65" width="100" height="1445.74" transform="rotate(29.6449 1034.1 -65)" fill="#FAFAFA"/>
+<rect x="1034.1" y="-65" width="100" height="1445.74" transform="rotate(29.6449 1034.1 -65)" fill="#F2F2F2"/>
 <circle cx="720" cy="564" r="70" stroke="#E6E6E6" stroke-width="0.6"/>
 <circle cx="720" cy="564" r="140" stroke="#E6E6E6" stroke-width="0.6"/>
 <circle cx="720" cy="564" r="280" stroke="#E6E6E6" stroke-width="0.6"/>
