@@ -45,10 +45,10 @@
 
 .__spin{
     transition: ease-in-out;
-    animation: SPIN 8s infinite;
+    animation: SPIN 16s infinite;
 }
 .__spin:hover{
-    animation: SPIN 6s infinite;
+    animation: none;
 }
 
 @keyframes SPIN{
