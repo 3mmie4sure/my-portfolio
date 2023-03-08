@@ -4,6 +4,12 @@
     background-size: cover;
 }
 
+.aux_bg{
+    background-image: url("../img/grid_lines.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .social_box{
     width: 40px;
     height: 40px;
@@ -12,7 +18,27 @@
 }
 
 
+.contact_box{
+    width:36px;
+    height: 36px;
+    background-color: #F8EDED;
+    border-radius: 50%;
+}
+
+
 @font-face {
-    font-family: PrimaryFont;
-    src: url();
+    font-family: headerfont;
+    src: url('../font/georgia.ttf');
+
+    font-family: bodyfont;
+    src: url('../font/dmsans/DMSans-Regular.ttf');
+}
+
+
+.header_font{
+    font-family: headerfont;
+}
+
+.body_font{
+    font-family: bodyfont;
 }
