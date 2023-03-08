@@ -42,3 +42,16 @@
 .body_font{
     font-family: bodyfont;
 }
+
+.__spin{
+    transition: ease-in-out;
+    animation: SPIN 8s infinite;
+}
+.__spin:hover{
+    animation: SPIN 6s infinite;
+}
+
+@keyframes SPIN{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
