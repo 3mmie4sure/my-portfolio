@@ -14,46 +14,49 @@
 </head>
 <body onload="startCount()">
 
-<div class="grid grid-cols-1 h-screen justify-center place-items-center">
-    <h1 style="font-size:320px; font-weight: bold;" id="loaderNum">
+<div class="grid grid-cols-1 p-24 m-0 h-screen justify-center place-items-start">
+    <h1 class="header_font" style="font-size:320px; font-weight: bold;" id="loaderNum">
 
     </h1>
+
+    <p class="text-lg" id="little_text">Welcome to my Little Corner...</p>
+
+    <!-- Progress bAR -->
+    <div class="progress_bar">
+    </div>
 </div>
 
     
 
-    <script>
+<script>
 
-    let i = 11;
+    let i = 7;
 
-   function Count()
-    {
-        
-        if (i <= 11 && i >= 1) 
-            {
-                i--;
-                // console.log(i);
-                document.querySelector('#loaderNum').innerHTML = i;
-                if(i == 0){
-                    window.location.assign('index.html');
+    function Count()
+        {
+            
+            if (i <= 7 && i >= 1) 
+                {
+                    i--;
+                    document.querySelector('#loaderNum').innerHTML ='0'+i;
+                    if(i == 3){
+                        document.querySelector('#little_text').innerHTML = "It's all Shades of Black and White Here...";
+                    }
+                    if(i == 0){
+                        window.location.assign('index.html');
+                    }
+                    
                 }
-                
-            }
-    };
+        };
+    
 
 
     function startCount(){
         
         setInterval(Count, 1000);
     }
-
-
-    
-
-
-
-            
+                
         
-    </script>
+</script>
 </body>
 </html>
