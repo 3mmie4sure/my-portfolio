@@ -5,230 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"> 
 
 </head>
-<body class="aux_bg animate__animated animate__fadeIn">
-    <!-- Top Navigation -->
-    <nav class="h-24 animate__animated animate__fadeIn">
+<body onload="startCount()" class="aux_bg">
 
-        <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 lg:pl-28 lg:pr-28 md:pl-16 md:pr-16 p-8">
+<div class="grid grid-cols-1 p-24 m-0">
+    <span class="header_font m-0 p-0" style="font-size:320px; font-weight: bold;" id="loaderNum">
+        06
+    </span>
 
-            <!-- Links -->
-            <div class="hidden md:block lg:block">
-                <ul class="inline-flex lg:gap-8 md:gap-4">
-                    <li>
-                        <a class="body_font font-bold" href="./projects.html" style="letter-spacing: 3px;">
-                            MY WORKS
-                        </a>
-                         <!-- <hr class="w-3/5 mt-3 border-2 border-black"> -->
-                    </li>
+    <h3 class="text-4xl body_font" style="color: #666666;" id="little_text">Welcome to my Little Corner...</h3>
 
-                    <li>
-                       <a class="body_font font-bold" href="./about.html" style="letter-spacing: 3px;">
-                            ABOUT ME
-                       </a> 
-                        <!-- <hr class="w-3/5 mt-3 border-2 border-black"> -->
-                    </li>
-                </ul>
-            </div>
-                
-            <!-- My logo -->
-            <div class="flex lg:justify-center md:justify-center justify-start">
-                <a href="./index.html">
-                    <img class="justify-center transition hover:-rotate-12" src="./assets/img/e.svg"/>
-                </a>
-                
-            </div>
-
-
-            <div class="flex justify-end">
-                <ul class="inline-flex gap-4">
-                    <li>
-                        <div class="grid grid-cols-1 social_box place-items-center">
-                            <img src="./assets/img/facebook.svg">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="grid grid-cols-1 social_box place-items-center">
-                            <img src="./assets/img/instagram.svg">
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="grid grid-cols-1 social_box place-items-center">
-                            <img src="./assets/img/twitter.svg">
-                        </div>
-                    </li>
-
-
-                </ul>
-            </div>
-
-
-
-        </div>
-
-    </nav>
-    <!-- // Top Navigation -->
-
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-24 lg:pl-28 md:pl-16 md:pr-16 lg:pr-28 pr-10 pl-10">
-
-        <!-- Ist Column -->
-        <div class="grid grid-cols-1 w-100">
-
-            <div class="mt-0 animate__animated animate__fadeInLeft">
-                <h2 class="text-3xl header_font">
-                    About Me
-                </h2>
-                <hr class="w-20 mt-2 mb-3" style="border-color: solid #BFBFBF;">
-    
-                <p class="body_font" style="color: #737373;">
-                    I am a passionate problem solver, awesome web <br>developer and innvative product designer.
-                </p>
-                <a href="about.html">
-                    <img class="mt-4 transition hover:translate-x-6" src="./assets/img/arrow_image.svg">
-                </a>
-            </div>
-
-            <div class="mt-16 animate__animated animate__fadeInLeft animate__delay-1s">
-                <h2 class="text-3xl header_font">
-                    Contact Me
-                </h2>
-                <hr class="w-20 mt-2 mb-3" style="border-color: solid #BFBFBF;">
-
-                <div>
-                    <ul class="inline-flex gap-3">
-                        <li>
-                            <div class="contact_box grid grid-cols-1 place-items-center">
-                                <img src="./assets/img/mail.svg">
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="mailto:adeekoemmanuel007@gmail.com" class="header_font font-regular text-xl italic underline" style="color: #4D4D4D;">emmy4sure.web@gmail.com</a>
-                        </li>
-                    </ul>
-
-                    <ul class="inline-flex gap-3 mt-3">
-                        <li>
-                            <div class="contact_box grid grid-cols-1 place-items-center">
-                                <img src="./assets/img/phone-call.svg"/>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="mailto:adeekoemmanuel007@gmail.com" class="header_font font-regular text-xl italic underline" style="color: #4D4D4D;">+234 - 701 - 5263 - 711</a>
-                        </li>
-                    </ul>
-
-                </div>
-                
-            </div>
-
-
-            <div class="animate__animated animate__fadeInUp animate__delay-2s">
-                <img class="__spin mt-16 mb-24" src="./assets/img/circledText.svg">
-            </div>
-
-        </div>
-    
-
-        <!-- My center imGAE -->
-
-        <div class="flex justify-center hidden md:hidden lg:block">
-            <img class="w-4/4 transition hover:-translate-y-4" src="./assets/img/me.svg">
-        </div>
-
-
-        <div class="justify-end grid grid-cols-1">
-            <div class="mt-0 w-full animate__animated animate__fadeInRight">
-                <h2 class="text-3xl lg:text-right md:text-right text-left header_font">
-                    What I Do 
-                </h2>
-                <hr class="w-20 mt-2 mb-3 float-right" style="border-color: solid #BFBFBF;">
-
-                <ul class="inline-flex lg:justify-end md:justify-end justify-start gap-3 w-full mt-5">
-                    <li>
-                        <p class="body_font font-bold text-lg md:text-right text-left">Product Design</p>
-
-                    <li>
-                        <img src="./assets/img/double_edged_arrow.svg">
-                    </li>
-                </ul>
-
-            
-                <ul class="inline-flex lg:justify-end md:justify-end justify-start gap-3 w-full mt-5">
-                    <li class="">
-                        <p class="body_font font-bold text-lg text-right">Frontend Web Development</p>
-                    <li>
-                        <img src="./assets/img/double_edged_arrow.svg">
-                    </li>
-                </ul>
-
-                <ul class="inline-flex lg:justify-end md:justify-end justify-start gap-3 w-full mt-5">
-                    <li class="">
-                        <p class="body_font font-bold text-lg text-right">Frontend Web Development</p>
-                    <li>
-                        <img src="./assets/img/double_edged_arrow.svg">
-                    </li>
-                </ul>
-            </div>
-
-        
-            <div class="mt-20 lg:mt-0 md:mt-0 w-full animate__animated animate__fadeInRight animate__delay-1s">
-                <h2 class="text-3xl md:text-right lg:text-right text-left header_font">
-                    Skills
-                </h2>
-                <hr class="w-20 mt-2 mb-3 lg:float-right md:float-right float-left" style="border-color: solid #BFBFBF;">
-
-                <div class="mt-12 grid grid-cols-1 w-full md:mb-2 lg:mb-2 lg:place-items-end md:place-items-end place-items-start">
-                    <div class="grid grid-cols-2 w-3/4 gap-4">
-
-                        <div class="grid grid-cols-1 w-full h-72 gap-4">
-                            <div class=" h-28 w-full bg_skills p-4 transition hover:-translate-y-1">
-                                <h6 class="mt-12 body_font">Prototyping</h6>
-                            </div>
-
-                            <div class="h-28 w-full bg_skills p-4 transition hover:-translate-y-1">
-                                <h6 class="mt-12 body_font">Motion Design</h6>
-                            </div>
-
-                            <div class="h-28 w-full bg_skills p-4 transition hover:-translate-y-1">
-                                <h6 class="mt-12 body_font">HTML</h6>
-                            </div>
-                        </div>
-
-
-                        <div class="grid grid-cols-1 w-full h-72 mt-8 gap-4">
-                            <div class="h-28 w-full bg_skills p-4 transition hover:-translate-y-1">
-                                <h6 class="mt-12 body_font">UX Design</h6>
-                            </div>
-
-                            <div class="h-28 w-full bg_skills p-4 transition hover:-translate-y-1">
-                                <h6 class="mt-12 body_font">UI Design</h6>
-                            </div>
-
-                            <div class="h-28 w-full bg_skills p-4 transition hover:-translate-y-1">
-                                <h6 class="mt-12 body_font">CSS</h6>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                </div>
-            </div>
-
-
-        </div>
-
+    <!-- Progress bAR -->
+    <div class="progress_bar mt-10">
     </div>
-        
+</div>
+
     
+
+<script>
+
+    let i = 7;
+
+    function Count()
+    {
+            
+            if (i <= 7 && i >= 1) 
+                {
+                    i--;
+                    document.querySelector('#loaderNum').innerHTML ='0'+i;
+                    if(i == 3){
+                        document.querySelector('#little_text').innerHTML = "It's all Shades of Black and White in here...";
+                    }
+                    if(i == 0){
+                        window.location.assign('home.html');
+                    }
+                    
+                }
+    };
+    
+
+    function startCount()
+    {
+        
+        setInterval(Count, 1000);
+    }
+
+        
+</script>
 </body>
 </html>
