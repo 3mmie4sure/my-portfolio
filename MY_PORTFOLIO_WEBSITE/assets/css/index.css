@@ -10,6 +10,12 @@
     background-size: cover;
 }
 
+.bg_skills{
+    background-image: url("../img/bg-skill.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .social_box{
     width: 40px;
     height: 40px;
