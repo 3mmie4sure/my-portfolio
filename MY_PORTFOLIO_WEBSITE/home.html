@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/nav_controller.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"> 
+
 
 </head>
 <body class="home_bg animate__animated animate__fadeIn">
@@ -281,32 +284,6 @@
     
 
     </div>
-
-    
-
-    <script>
-        
-        const nav_trigger = document.querySelector('#navtrigger');
-
-        const nav_closer = document.querySelector('#close_btn');
-
-        const responsiveNav = document.querySelector('#responsiveNav');
-
-        // Code to Open nav On Trigger
-        nav_trigger.addEventListener('click', ()=> 
-        {
-            responsiveNav.classList.replace('hidden', 'block');
-        });
-
-
-        // Code to close nav on trigger
-        nav_closer.addEventListener('click',()=>
-        {
-            responsiveNav.classList.replace('block', 'hidden');
-        });
-
-        
-    </script>
         
     
 </body>

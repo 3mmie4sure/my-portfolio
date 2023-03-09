@@ -1,19 +1,24 @@
-const nav_trigger = document.querySelector('#navtrigger');
+window.onload =()=>{
 
-const nav_closer = document.querySelector('#close_btn');
+    const nav_trigger = document.getElementById('navtrigger');
 
-const responsiveNav = document.querySelector('#responsiveNav');
+    const nav_closer = document.getElementById('close_btn');
 
-// Code to Open nav On Trigger
-nav_trigger.addEventListener('click', ()=> 
-{
-    responsiveNav.classList.replace('hidden', 'block');
-});
+    const responsiveNav = document.getElementById('responsiveNav');
+
+    // Code to Open nav On Trigger
+    nav_trigger.addEventListener('click',()=> 
+    {
+        responsiveNav.classList.replace('hidden', 'block');
+    });
 
 
-// Code to close nav on trigger
-nav_closer.addEventListener('click',()=>
-{
-    responsiveNav.classList.replace('block', 'hidden');
-});
+    // Code to close nav on trigger
+    nav_closer.addEventListener('click',()=>
+    {
+        responsiveNav.classList.replace('block', 'hidden');
+    });
+
+
+}
 
