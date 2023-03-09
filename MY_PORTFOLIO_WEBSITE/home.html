@@ -72,6 +72,13 @@
                     </li>
 
 
+                    <li class="lg:hidden md:hidden block">
+                        <div class="grid grid-cols-1 social_box place-items-center" id="navtrigger">
+                            <img src="./assets/img/menu.svg">
+                        </div>
+                    </li>
+
+
                 </ul>
             </div>
 
@@ -157,7 +164,7 @@
                 <h2 class="text-3xl lg:text-right md:text-right text-left header_font">
                     What I Do 
                 </h2>
-                <hr class="w-20 mt-2 mb-3 float-right" style="border-color: solid #BFBFBF;">
+                <hr class="w-20 mt-2 mb-3 lg:float-right md:float-right float-left" style="border-color: solid #BFBFBF;">
 
                 <ul class="inline-flex lg:justify-end md:justify-end justify-start gap-3 w-full mt-5">
                     <li>
@@ -234,6 +241,72 @@
         </div>
 
     </div>
+
+
+    <!-- Responsive Nav -->
+    <div class="nav_container h-screen w-screen fixed top-0 lg:hidden md:hidden hidden z-[100]" id="responsiveNav">
+
+        <div class="responsive_nav p-8  animate__animated animate__fadeInUpBig bg-white shadow border-t-2 h-auto w-screen fixed bottom-0">
+            <ul class="flex flex-col gap-6 mb-6">
+                <!-- Contol -->
+                <li class="grid grid-cols-1 place-items-end">
+                    <div class="social_box bg-black grid grid-cols-1 place-items-center">
+                        <img src="./assets/img/close_btn.svg" id="close_btn">
+                    </div>
+
+                </li>
+    
+
+                <!-- Links -->
+                <li>
+                    <div class="border-l-4 h-auto pl-4 pr-4 pt-2 pb-2  border-black">
+                        <a class="body_font font-bold" href="./projects.html" style="letter-spacing: 3px;">
+                            ABOUT ME
+                        </a>
+                    </div>
+                </li>
+    
+    
+                <li>
+                    <div class="border-l-0 h-auto pl-4 pr-4">
+                        <a class="body_font" href="./projects.html" style="letter-spacing: 3px;">
+                            MY WORKS
+                        </a>
+                    </div>
+                </li>
+    
+            </ul>
+    
+        </div>
+    
+
+    </div>
+
+    
+
+    <script>
+        
+        const nav_trigger = document.querySelector('#navtrigger');
+
+        const nav_closer = document.querySelector('#close_btn');
+
+        const responsiveNav = document.querySelector('#responsiveNav');
+
+        // Code to Open nav On Trigger
+        nav_trigger.addEventListener('click', ()=> 
+        {
+            responsiveNav.classList.replace('hidden', 'block');
+        });
+
+
+        // Code to close nav on trigger
+        nav_closer.addEventListener('click',()=>
+        {
+            responsiveNav.classList.replace('block', 'hidden');
+        });
+
+        
+    </script>
         
     
 </body>
