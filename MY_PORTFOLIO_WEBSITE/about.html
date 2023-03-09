@@ -5,8 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./assets/css/index.css"> 
 </head>
-<body>
+<body class="aux_bg">
+
+     <!-- Top Navigation -->
+     <nav class="h-24">
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 pl-28 pr-28 p-12">
+
+            <!-- Links -->
+            <div class="hidden md:block">
+                <ul class="inline-flex gap-8">
+                    <li>
+                        <a class="body_font font-bold" href="">
+                            MY WORKS
+                        </a>
+                        <!-- <hr class="w-3/5 mt-3 border-2 border-black"> -->
+                    </li>
+
+                    <li>
+                       <a class="body_font font-bold">
+                            ABOUT ME
+                       </a> 
+                       <hr class="w-3/5 mt-3 border-2 border-black">
+                    </li>
+                </ul>
+            </div>
+                
+            <!-- My logo -->
+            <div class="flex justify-center">
+                <img class="justify-center" src="./assets/img/e.svg"/>
+            </div>
+
+
+            <div class="flex justify-end">
+                <ul class="inline-flex gap-4">
+                    <li>
+                        <div class="grid grid-cols-1 social_box place-items-center">
+                            <img src="./assets/img/facebook.svg">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="grid grid-cols-1 social_box place-items-center">
+                            <img src="./assets/img/instagram.svg">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="grid grid-cols-1 social_box place-items-center">
+                            <img src="./assets/img/twitter.svg">
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- // Top Navigation -->
+
+
+    <div class="grid grid-cols-1 pl-20 pr-20 m-20 h-full w-5/5" style="border-left: double #dddddd;  border-right: double #dddddd;">
+        <p class="text-lg body_font">
+            HELLO THERE
+        </p>
+
+        <h3 class="text-4xl mt-5" style="line-height: 54px;">
+            I'm a UI /UX Designer and web developer with a passion for creating <br>intuitive and visually appealing digital experiences
+        </h3>
+
+        <h3 class="text-4xl mt-12" style="line-height: 54px;">
+            With a strong background with both design and development, I specialize in creating user-centered interfaces that are both beautiful and functional.
+        </h3>
+
+
+        <h3 class="text-4xl mt-12" style="line-height: 54px;">
+            My goal is to make the web a better place by crafting products that are <br>easy to use and is accessible to everyone.
+        </h3>
+
+
+    </div>
+
     
 </body>
 </html>
