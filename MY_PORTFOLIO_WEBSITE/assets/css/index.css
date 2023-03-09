@@ -7,7 +7,7 @@
 .aux_bg{
     background-image: url("../img/grid_lines.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .bg_skills{
