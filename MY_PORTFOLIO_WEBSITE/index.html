@@ -7,12 +7,13 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"> 
 
 </head>
-<body class="aux_bg">
+<body class="aux_bg animate__animated animate__fadeIn">
     <!-- Top Navigation -->
-    <nav class="h-24">
+    <nav class="h-24 animate__animated animate__fadeInDown">
 
         <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 pl-28 pr-28 p-12">
 
@@ -20,14 +21,14 @@
             <div class="hidden md:block">
                 <ul class="inline-flex gap-8">
                     <li>
-                        <a class="body_font font-bold" href="">
+                        <a class="body_font font-bold" href="" style="letter-spacing: 3px;">
                             MY WORKS
                         </a>
                          <!-- <hr class="w-3/5 mt-3 border-2 border-black"> -->
                     </li>
 
                     <li>
-                       <a class="body_font font-bold">
+                       <a class="body_font font-bold" style="letter-spacing: 3px;">
                             ABOUT ME
                        </a> 
                         <!-- <hr class="w-3/5 mt-3 border-2 border-black"> -->
@@ -76,7 +77,8 @@
 
         <!-- Ist Column -->
         <div class="grid grid-cols-1 w-100">
-            <div class="mt-0">
+
+            <div class="mt-0 animate__animated animate__fadeInLeft">
                 <h2 class="text-3xl header_font">
                     About Me
                 </h2>
@@ -90,7 +92,7 @@
                 </a>
             </div>
 
-            <div class="mt-16">
+            <div class="mt-16 animate__animated animate__fadeInLeft animate__delay-1s">
                 <h2 class="text-3xl header_font">
                     Contact Me
                 </h2>
@@ -126,7 +128,7 @@
             </div>
 
 
-            <div>
+            <div class="animate__animated animate__fadeInLeft animate__delay-2s">
                 <img class="__spin mt-16 mb-24" src="./assets/img/circledText.svg">
             </div>
 
