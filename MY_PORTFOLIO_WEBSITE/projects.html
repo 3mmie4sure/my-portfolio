@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./assets/css/index.css"> 
+    <script src="./assets/js/get_projects.js"></script>
+</head>
+<body>
+
+     <!-- Top Navigation -->
+     <nav class="h-24">
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 pl-28 pr-28 p-12">
+
+            <!-- Links -->
+            <div class="hidden md:block">
+                <ul class="inline-flex gap-6">
+                    <li>
+                        <a class="body_font font-bold" href="">
+                            MY WORKS
+                        </a>
+                        <!-- <hr class="w-3/5 mt-3"> -->
+                    </li>
+
+                    <li>
+                       <a class="body_font font-bold">
+                            ABOUT ME
+                       </a> 
+                       <!-- <hr class="w-3/5 mt-3"> -->
+                    </li>
+                </ul>
+            </div>
+                
+            <!-- My logo -->
+            <div class="flex justify-center">
+                <img class="justify-center" src="./assets/img/e.svg"/>
+            </div>
+
+
+            <div class="flex justify-end">
+                <ul class="inline-flex gap-4">
+                    <li>
+                        <div class="grid grid-cols-1 social_box place-items-center">
+                            <img src="./assets/img/facebook.svg">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="grid grid-cols-1 social_box place-items-center">
+                            <img src="./assets/img/instagram.svg">
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="grid grid-cols-1 social_box place-items-center">
+                            <img src="./assets/img/twitter.svg">
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- // Top Navigation -->
+
+    <div class="flex pl-28 pr-16 justify-between mt-12">
+        <div class="mt-6">
+            <h2 class="text-6xl header_font">My Project</h2>
+            <p class="mt-2 body_font text-2xl" style="color: #666666;">Some cool projects I've worked on</p>
+        </div>
+       
+        <div>
+            <img src="./assets/img/circledText.svg" class="h-3/4 __spin">
+
+        </div>
+    </div>
+
+
+    <div class="grid grid-cols-3 pl-28 pr-28 gap-6" id="designs">
+        <!-- Design -->
+    </div>
+    
+</body>
+</html>

@@ -27,7 +27,7 @@ fetch(url)
         const card = document.createElement('div');
         card.setAttribute('class', 'card');
         document.querySelector('#designs').appendChild(card);
-        card.classList.add('mt-4','w-full', 'animate__animated', 'animate__fadeInUp');
+        card.classList.add('mt-4','w-full');  //'animate__animated', 'animate__fadeInUp'
 
         // Append image to card
         card.appendChild(Img);
