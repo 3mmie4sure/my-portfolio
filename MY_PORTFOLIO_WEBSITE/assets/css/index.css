@@ -7,7 +7,7 @@ body{
 .home_bg{
     background-image: url("../img/home_bg.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .aux_bg{
