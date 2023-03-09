@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"> 
     <script src="./assets/js/get_projects.js"></script>
@@ -15,7 +15,7 @@
 <body class="aux_bg">
 
      <!-- Top Navigation -->
-     <nav class="h-24">
+     <nav class="h-24 animate__animated animate__fadeInDown">
 
         <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 pl-28 pr-28 p-12">
 
@@ -23,14 +23,14 @@
             <div class="hidden md:block">
                 <ul class="inline-flex gap-8">
                     <li>
-                        <a class="body_font font-bold" href="" style="letter-spacing: 3px;">
+                        <a class="body_font font-bold" href="./projects.html" style="letter-spacing: 3px;">
                             MY WORKS
                         </a>
                         <hr class="w-3/5 mt-3 border-2 border-black">
                     </li>
 
                     <li>
-                       <a class="body_font font-bold" style="letter-spacing: 3px;">
+                       <a class="body_font font-bold" href="./about.html" style="letter-spacing: 3px;">
                             ABOUT ME
                        </a> 
                        <!-- <hr class="w-3/5 mt-3 border-2 border-black"> -->
@@ -38,9 +38,12 @@
                 </ul>
             </div>
                 
-            <!-- My logo -->
-            <div class="flex justify-center">
-                <img class="justify-center" src="./assets/img/e.svg"/>
+             <!-- My logo -->
+             <div class="flex justify-center">
+                <a href="./index.html">
+                    <img class="justify-center transition hover:-rotate-12" src="./assets/img/e.svg"/>
+                </a>
+                
             </div>
 
 
