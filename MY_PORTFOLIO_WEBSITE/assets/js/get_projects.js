@@ -32,7 +32,6 @@ fetch(url)
         // Append image to card
         card.appendChild(Img);
         card.appendChild(text_title);
-
         
     });
 });
