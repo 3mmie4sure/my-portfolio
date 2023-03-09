@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/css/index.css"> 
+
+</head>
+<body onload="startCount()">
+
+<div class="grid grid-cols-1 h-screen justify-center place-items-center">
+    <h1 style="font-size:320px; font-weight: bold;" id="loaderNum">
+
+    </h1>
+</div>
+
+    
+
+    <script>
+
+    let i = 11;
+
+   function Count()
+    {
+        
+        if (i <= 11 && i >= 1) 
+            {
+                i--;
+                // console.log(i);
+                document.querySelector('#loaderNum').innerHTML = i;
+                if(i == 0){
+                    window.location.assign('index.html');
+                }
+                
+            }
+    };
+
+
+    function startCount(){
+        
+        setInterval(Count, 1000);
+    }
+
+
+    
+
+
+
+            
+        
+    </script>
+</body>
+</html>
